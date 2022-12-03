@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: release-nginx
+  labels:
+    app: release_nginx
+spec:
+  containers:
+  - name: nginx
+    image: maaz0816/cloudethix_release_nginx_maaz:v1
+    ports:
+      - containerPort: 80
